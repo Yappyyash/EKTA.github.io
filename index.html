@@ -20,7 +20,7 @@
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-        <link href="css/templatemo-topic-listing.css" rel="stylesheet">      
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet"> 
 
 <style>
     .underline{
@@ -98,7 +98,7 @@
 .sweet-title:hover{
     transform:scale(1.1);
 }
-/* underline */
+/* underline end*/
 /* typing */
 .typing::before {
     content: '';
@@ -130,7 +130,7 @@
 }
 
 .typing h2 {
-    position: relative;
+    position:relative;
     letter-spacing: 2px;
     font-size: 3rem;
     overflow: hidden;
@@ -150,9 +150,10 @@
     }
 }
 
-@media(max-width: 330px) {
+@media(max-width: 550px) {
     .typing h2 {
-        font-size: 3rem;
+        font-size: 1.7rem;
+        justify-content: center;
         animation: type 5s steps(10) infinite;
     }
 
@@ -197,7 +198,110 @@
 }
 
 /* heading style end*/
+.header {
+	font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+	font-size: 5rem;
+	font-weight:  400;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+/* timer */
+/* TIMER STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+.timeContainer {
+  font-family: 'Noto Sans JP', sans-serif;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeContainer .wrapper {
+  width: 800px;
+  padding: 20px;
+  max-height: 400px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.timeContainer .wrapper div {
+  color: #ccc;
+  text-align: center;
+  width: 24%;
+  height: 150px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.timeContainer .wrapper div:first-child{
+  background: #00A3D0;
+  color: white;
+}
+
+.timeContainer .wrapper div:nth-child(2){
+  background: #00A3D0;
+  color: white;
+}
+
+.timeContainer .wrapper div:nth-child(3){
+  background: #1C1C1C;
+  color: #fff;
+}
+
+.timeContainer .wrapper div:last-child{
+  background: #1C1C1C;
+  color: #fff;
+}
+
+.timeContainer .wrapper div h2 {
+  font-size: 4.4rem;
+}
+
+.circleDiv {
+  position: absolute;
+  z-index: 0;
+  top: 710%;
+  left: calc(-52% + 474px);
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  border: 6px dashed #00A3D0;
+  animation: rotatingCircle infinite linear 60s;
+}
+@media(max-width: 1000px) {
+    .circleDiv{
+        display: none;
+    }
+    }
+
+@keyframes rotatingCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* timer end */
 </style>
+
     </head>
     
     <body id="top">
@@ -266,7 +370,7 @@
                         
                         <div class="col-lg-8 col-12 mx-auto">
                             <div class="typing">
-                                <h2 class="text-white text-center">Explore. Learn. Earn</h2>
+                                <h2 class="text-white text-center">Explore.Learn.Earn</h2>
                             </div>    
                             <h6 class="text-center">Bridging the Gap Between Learning and Industry Experience. </h6>
 
@@ -812,70 +916,33 @@
                 </div>
             </section>
 
-
             <section class="contact-section section-padding section-bg" id="section_5">
-                <div class="container">
-                   <!-- <div class="row">
+                
+                <h1 class="header">FREE REGISTRATION</h1>
+                    <!-- ROTATING CIRCLE-->
+                    <div class="circleDiv"></div>
 
-                        <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-5">Get in touch</h2>
+                    <!-- TIMER -->
+                    <section class="timeContainer">
+                    <div class="wrapper">
+                        <div class="days">
+                        <h2 id="days">DD</h2>DAYS
                         </div>
-
-                        <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.065641062665!2d-122.4230416990949!3d37.80335401520422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858127459fabad%3A0x808ba520e5e9edb7!2sFrancisco%20Park!5e1!3m2!1sen!2sth!4v1684340239744!5m2!1sen!2sth" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="hours">
+                        <h2 id="hours">HH</h2>HOURS
                         </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
-                            <h4 class="mb-3">Head office</h4>
-
-                            <p>Bay St &amp;, Larkin St, San Francisco, CA 94109, United States</p>
-
-                            <hr>
-
-                            <p class="d-flex align-items-center mb-1">
-                                <span class="me-2">Phone</span>
-
-                                <a href="tel: 305-240-9671" class="site-footer-link">
-                                    305-240-9671
-                                </a>
-                            </p>
-
-                            <p class="d-flex align-items-center">
-                                <span class="me-2">Email</span>
-
-                                <a href="mailto:info@company.com" class="site-footer-link">
-                                    info@company.com
-                                </a>
-                            </p>
+                        <div class="minutes">
+                        <h2 id="minutes">MM</h2>MINUTES
                         </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mx-auto">
-                            <h4 class="mb-3">Dubai office</h4>
-
-                            <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
-
-                            <hr>
-
-                            <p class="d-flex align-items-center mb-1">
-                                <span class="me-2">Phone</span>
-
-                                <a href="tel: 110-220-3400" class="site-footer-link">
-                                    110-220-3400
-                                </a>
-                            </p>
-
-                            <p class="d-flex align-items-center">
-                                <span class="me-2">Email</span>
-
-                                <a href="mailto:info@company.com" class="site-footer-link">
-                                    info@company.com
-                                </a>
-                            </p>
+                        <div class="seconds">
+                        <h2 id="seconds">SS</h2>SECONDS
                         </div>
+                    </div>
+                    </section>
 
-                    --></div>
-                </div>
+                
             </section>
+            
         </main>
 
 <footer class="site-footer section-padding">
@@ -956,6 +1023,52 @@
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+    
+        // TIMER JS
+        const __days = document.querySelector("#days")
+        const __hours = document.querySelector("#hours")
+        const __minutes = document.querySelector("#minutes")
+        const __seconds  = document.querySelector("#seconds")
+        
+        // Change the of this variable.
+        // ex: May 22 2024 18:00:00
+        // May 22, 2024 at 6PM
+        const newYearEnd = 'Jan 01 2024 00:00:00';
+        
+        function countdown(){
+            const newYearEndDate = new Date(newYearEnd);
+            const currentDate = new Date();
+        
+            const totalSeconds = (newYearEndDate-currentDate)/1000;
+            const days = Math.floor(totalSeconds / 3600 / 24);
+            const hours = Math.floor(totalSeconds / 3600 ) % 24;
+            const minutes = Math.floor(totalSeconds / 60 ) % 60;
+            const seconds = Math.floor(totalSeconds % 60);
+            
+            
+           __days.innerHTML =  formatTime(days);
+           __hours.innerHTML = formatTime(hours);
+           __minutes.innerHTML = formatTime(minutes);
+           __seconds.innerHTML = formatTime(seconds);
+            // console.log(seconds)
+            // console.log(minutes)
+            // console.log(hours)
+            __days.style.color = "white";
+    __hours.style.color = "white";
+    __minutes.style.color = "white";
+    __seconds.style.color = "white";
+            
+        }
+        countdown();
+        
+        function formatTime(time){
+            return time < 10 ? `0${time}` : time;
+        }
+        
+        setInterval(countdown,1000);
+
+        </script>
 
     </body>
 </html>
