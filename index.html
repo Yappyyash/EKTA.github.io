@@ -301,7 +301,13 @@
     transform: rotate(360deg);
   }
 }
-
+.logo{
+    height: 10rem;
+    margin-top:-30px;margin-bottom: -40px;
+    @media (max-width:1000px) {
+        display: none;
+    }
+}
 /* timer end */
 </style>
 
@@ -312,12 +318,13 @@
         <main>
 
             <nav class="navbar navbar-expand-lg">
+                <img class="logo" src="./images/logo.png" alt="logo">
+
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         <i>EKTA</i><br>
                         <span>initiative by Techvimaan</span>
                     </a>
-
                     <!-- <div class="d-lg-none ms-auto me-4">
                         <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
                     </div> -->
